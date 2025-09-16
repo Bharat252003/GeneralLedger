@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: min(70%, 750px);
+    gap: 20px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    background-color: brown;
+    padding: 4px;
+    font-size: 24px;
+}
+.btn{
+    outline: none;
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.delete-btn,.edit-cancel-btn{
+    color: red;
+    font-size: 16px;
+}
+.edit-btn,.edit-submit-btn{
+    color: green;
+    font-size: 16px;
+}
+tfoot{
+    display: none;
+}
+/* table{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+} */
+ .edit-btn:disabled{
+   cursor: not-allowed;
+   color: grey;
+ }
+ #ledger-table, #ledger-table th, #ledger-table td {
+    border-collapse: collapse;
+    border: 1px solid black;
+ }
+ #ledger-table{
+    border-radius: 10px;
+    /* width: min(80%, 800px); */
+    width: 100%;
+ }
+ #ledger-table th, #ledger-table td {
+    padding: 10px;
+    text-align: left;
+ }
+
+ /* form style */
+ #ledger-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+ }
+ .form-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin-top: 12px;
+ }
+ .form-container p{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 4px;
+ }
+ #ledger-form input,#ledger-form select,.submit-btn {
+    padding: 8px 12px;
+    border: 2px solid gray;
+    border-radius: 8px;
+ }
+ .form-group{
+    display: flex;
+    position: relative;
+ }
+ .form-group label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    font-size: 12px;
+    padding: 0px 4px;
+ }
+ .submit-btn{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+ }
+ #save-btn{
+    width: 100%;
+    padding: 6px 12px;
+    background-color: gray;
+    /* margin: 4px; */
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+ }
+#save-btn:disabled{
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+table input,table select{
+    width: 100%;
+}
